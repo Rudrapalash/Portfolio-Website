@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudrapalash</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7604b692a7.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-30 bg-transparent">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-3xl font-bold tracking-wider">My Portfolio</div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-teal-400 transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-teal-400 transition duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-teal-400 transition duration-300">Skills</a></li>
+                <li><a href="#portfolio" class="hover:text-teal-400 transition duration-300">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-teal-400 transition duration-300">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu Links -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white p-4">
+            <ul class="space-y-4">
+                <li><a href="#home" class="block">Home</a></li>
+                <li><a href="#about" class="block">About</a></li>
+                <li><a href="#skills" class="block">Skills</a></li>
+                <li><a href="#portfolio" class="block">Portfolio</a></li>
+                <li><a href="#contact" class="block">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section with Spider Web Background -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative">
+        <div class="absolute inset-0" id="vanta-bg"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">Hello, I'm Rudrapalash</h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp">A Cybersecurity Expert & Web Developer</p>
+            <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 
+            focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 
+            dark:hover:bg-green-700 dark:focus:ring-green-800"><a href="#portfolio">View Projects</a></button>
+            <!--<img class="rounded-full w-96 h-96" src="./assets/433902967_1869633333461544_8740465897663252634_n.heic" alt="image description">-->
+
+        </div>
+    </section>
+
+   <!-- About Section with Particle Background -->
+<section id="about" class="relative py-16 bg-gray-800">
+    <!-- Particle Background -->
+    <div id="particles-js" class="absolute inset-0"></div>
+    <div class="relative z-10 container mx-auto px-6 md:px-12 lg:px-20">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start">
+            <!-- Left Content Section -->
+            <div class="lg:w-2/3 text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-lg md:text-xl mb-4">
+                    I'm a cybersecurity expert with a passion for web development...
+                </p>
+                <p class="text-lg md:text-xl mb-4">
+                    I'm a Web Developer and Cybersecurity professional with a passion for creating secure, user-friendly websites. With expertise in both front-end development, I focus on building visually appealing, high-performing sites that prioritize security. I love blending creativity with technical precision to deliver reliable and resilient digital experiences.
+                </p>
+                <!-- Centered Button -->
+                <div class="flex justify-center mt-6">
+                    <button type="button" class="text-gray-900 bg-blue-200 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                        <a href="#">Download Resume</a>
+                    </button>
+                </div>
+            </div>
+            <!-- Right Image Section -->
+            <div class="lg:w-1/3 flex justify-center lg:justify-end mt-8 lg:mt-0">
+                <img src="./assets/433902967_1869633333461544_8740465897663252634_n.heic" 
+                     style="border-radius: 50%;" 
+                     class="rounded-lg shadow-lg w-full max-w-xs lg:max-w-sm transform transition duration-500 opacity-0 hover:scale-105 hover:shadow-2xl fade-in">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional CSS for fade-in effect -->
+<style>
+    .fade-in {
+        animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-gray-800 rounded-lg text-center">HTML</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">CSS</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">JavaScript</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">Tailwind CSS</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">Bootstrap</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">Node.js</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">React</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">Python</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">Flask</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">SQL</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">C</div>
+                <div class="p-4 bg-gray-800 rounded-lg text-center">Networking</div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Project 1" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                    <p class="text-lg">Description of the project goes here...</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Project 2" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                    <p class="text-lg">Description of the project goes here...</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Project 3" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                    <p class="text-lg">Description of the project goes here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900">
+        <!-- Contact Me Section -->
+<section id="contact" class="relative py-16 bg-gray-800 text-white">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Contact Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Phone Number -->
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a3 3 0 001.61.51h.12a3 3 0 001.61-.51L21 8M3 16h18"/>
+                </svg>
+                <span class="text-lg md:text-xl">+91 9732518974</span>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m-4 12h-4a2 2 0 01-2-2V7a2 2 0 012-2h4m4 12h2a2 2 0 002-2v-3a2 2 0 00-2-2h-2m-4 4H7m-4 4h2m4-8h4m-8 4h8"/>
+                </svg>
+                <span class="text-lg md:text-xl">1000rudrap@gmail.com</span>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.84 4.61A8.96 8.96 0 0117 3.5a8.96 8.96 0 01-3.84 1.11c-.7.1-1.35.23-2 .4m-1.1.2A8.95 8.95 0 014.61 3.5a8.95 8.95 0 01-.4 2 8.96 8.96 0 01-1.11 3.84M3.5 17a8.95 8.95 0 01-.4-2A8.95 8.95 0 011.11 11m1.1 1.1A8.96 8.96 0 013.5 17a8.96 8.96 0 013.84 1.11c.7.1 1.35.23 2 .4m1.1.2a8.95 8.95 0 003.84 1.11 8.95 8.95 0 002-.4m-1.1-1.1A8.96 8.96 0 0117 20.5a8.96 8.96 0 013.84-1.11c.7-.1 1.35-.23 2-.4M12 7a5 5 0 110 10 5 5 0 010-10zm0 0V3.5"/>
+                </svg>
+                <span class="text-lg md:text-xl">@srudrapalash</span>
+            </div>
+
+            <!-- GitHub -->
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8c-1.63 0-2.94 1.31-2.94 2.94S14.37 14 16 14s2.94-1.31 2.94-2.94S17.63 8 16 8zm4-2.1V21c0 1.1-.9 2-2 2h-1c-.6 0-1-.4-1-1s.4-1 1-1h1v-1H9v1h1c.6 0 1 .4 1 1s-.4 1-1 1H9c-1.1 0-2-.9-2-2V5.9c0-1.1.9-2 2-2h4.9l1.9-1.9c.4-.4 1-.6 1.6-.6.6 0 1.2.2 1.6.6l1.9 1.9h4.9c1.1 0 2 .9 2 2z"/>
+                </svg>
+                <span class="text-lg md:text-xl">https://github.com/Rudrapalash</span>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 01-6 6H7v7H4v-7H1V9h3V7a5 5 0 0110 0v2h2z"/>
+                </svg>
+                <span class="text-lg md:text-xl">www.linkedin.com/in/rudrapalash-a9b45526a
+                    </span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </section>
+
+    <!-- Particles.js Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+     <!-- Include the Vanta.js and Three.js scripts -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js"></script>
+     <script>
+         VANTA.NET({
+             el: "#vanta-bg",
+             color: 0x00ff88,
+             backgroundColor: 0x000000,
+             points: 10.0,
+             maxDistance: 20.0,
+             spacing: 15.0,
+             showDots: true
+         });
+ 
+         // Mobile Menu Toggle
+         const menuBtn = document.getElementById('menu-btn');
+         const mobileMenu = document.getElementById('mobile-menu');
+         menuBtn.addEventListener('click', () => {
+             mobileMenu.classList.toggle('hidden');
+         });
+     </script>
+ 
+
+</body>
+</html>
